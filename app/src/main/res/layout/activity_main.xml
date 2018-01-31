@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.dyslexiaawarenessapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp">
+
+
+    <LinearLayout
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dimen_16dp">
+
+        <ImageView
+            android:contentDescription="@string/banner_text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner01"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dyslexia_intro"
+        android:layout_weight="1"
+        style="@style/IntroText"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dyslexia_buttons"
+        android:layout_below="@id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="@string/dyslexia_what_is_button"
+           style="@style/WhatIsButtons"
+           android:layout_weight="1.5"
+           />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/make_test_button"
+            style="@style/TestButtons"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/dyscalculia_buttons"
+            android:layout_below="@id/dyslexia_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dyscalculia_what_is_button"
+                style="@style/WhatIsButtons"
+                android:layout_weight="1.5"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/make_test_button"
+                style="@style/TestButtons"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dysgraphia_buttons"
+            android:layout_below="@id/dyscalculia_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dysgraphia_what_is_button"
+                style="@style/WhatIsButtons"
+                android:layout_weight="1.5"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/make_test_button"
+                style="@style/TestButtons"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/divider01"
+            android:layout_below="@id/dysgraphia_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/additional_information_buttons"
+            android:layout_below="@id/divider01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="@string/list_of_professionals_button"
+                style="@style/TestButtons"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="@string/additional_info_button"
+                style="@style/WhatIsButtons"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
